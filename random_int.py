@@ -7,7 +7,7 @@ import time
 # 2 - print random value, 1-6 inclusive
 
 def greet():
-	print('You have rolled a ', end='', flush=True)
+	print('\nRolling the single-sided die now!', flush=True)
 	return
 
 def dots():
@@ -18,9 +18,9 @@ def dots():
 	return
 
 def rolldie():
-	print(random.randint(1, 6))
-
+	print('\nYou rolled a ', end='', flush=True)
+	dots()
+	print(random.randint(1, 6),('\b!\n'))
 
 greet()
-dots()
 rolldie()
