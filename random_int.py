@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import random
 import time
 
@@ -11,16 +13,16 @@ def greet():
 	return
 
 def dots():
-	for x in range(0, 3):
-		time.sleep(1)
-		print('. ', end='', flush=True)
-	time.sleep(1)
+	for x in range(0, 3):				# Do this loop 3 times
+		time.sleep(1)					# Sleep one second per loop iteration
+		print('. ', end='', flush=True) # Print a full stop, no \n, flush terminal
+	time.sleep(1)						# Wait one more second after the loop
 	return
 
 def rolldie():
 	print('\nYou rolled a ', end='', flush=True)
 	dots()
-	print(random.randint(1, 6),('\b!\n'))
-
+	print(random.randint(1, 6),('\b!\n'))  # Display the random value, backspace, new line
+	
 greet()
 rolldie()
