@@ -23,6 +23,8 @@ def rolldie():
 	print('\nYou rolled a ', end='', flush=True)
 	dots()
 	print(random.randint(1, 6),('\b!\n'))  # Display the random value, backspace, new line
+	return
+	
 	
 greet()
 rolldie()
