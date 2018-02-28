@@ -5,6 +5,11 @@ import time
 #Function definitions
 
 def first_wait():
+	# How I would do this in C++:
+	# for(x=8;x>0;x++)
+	# {
+	#  cout << x << " minutes left!";
+	# }
 	x=8
 	for n in range(0, 6):
 		print('There are',x,'minutes left.')	# Do this loop 6 times (6 mins)
@@ -31,4 +36,3 @@ min_six()
 min_seven()
 
 print('Hooray your eggs are cooked, enjoy!')
-
