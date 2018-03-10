@@ -7,7 +7,7 @@ import time
 
 def first_wait_period():
 	x=6											# Alton recommends eight minutes. So we do
-												# six here + 2 functions later for msgs.
+												# six here + 2 1m functions later for msgs
 												
 	for n in range(0, x):						# Do this loop x times (x mins)
 		print('There are',x+2,'minutes left.')	# Print a running count of the time left
