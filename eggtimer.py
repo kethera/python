@@ -1,38 +1,42 @@
 #!/usr/bin/env python3
 
 import time
-
+#----------------
 #Function definitions
+#----------------
 
-def first_wait():
-	# How I would do this in C++:
-	# for(x=8;x>0;x++)
-	# {
-	#  cout << x << " minutes left!";
-	# }
-	x=8
-	for n in range(0, 6):
-		print('There are',x,'minutes left.')	# Do this loop 6 times (6 mins)
-		time.sleep(10)							# Sleep one minute per loop iteration
-		x - 1
-	return
+def first_wait_period():
+	x=6											# Alton recommends eight minutes. So we do
+												# six here + 2 functions later for msgs.
+												
+	for n in range(0, x):						# Do this loop x times (x mins)
+		print('There are',x+2,'minutes left.')	# Print a running count of the time left
+		time.sleep(60)							# Sleep one minute per loop iteration
+		
+		x=x-1									# Iterate
+		
+	return										# End of function
 
-def min_six():									# With two minutes left, egg the user on
-	print('Only two minutes left now!')
-	time.sleep(10)
-	return
 
-def min_seven():
-	print('Just sixty seconds to go!')			# One minute warning!
-	time.sleep(10)
+def min_seven():								# With two minutes left,
+	print('Only two minutes left now!')			# egg the user on
+	time.sleep(60)
 	return
 
 
+def min_eight():								# One minute
+	print('Just sixty seconds to go!')			# warning!
+	time.sleep(60)
+	return
+
+#----------------
+# Main program
+#----------------
 print('The Alton Brown egg timer!')
 input('Boil egg(s) in kettle. Hit enter when the kettle shuts itself off')
 
-first_wait()
-min_six()
+first_wait_period()
 min_seven()
+min_eight()
 
 print('Hooray your eggs are cooked, enjoy!')
