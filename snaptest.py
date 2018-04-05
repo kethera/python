@@ -1,5 +1,5 @@
-# EG3-04 Hello World
-
-import snaps import
+import time
+import snaps
 
 snaps.display_message('hello world')
+time.sleep(5)
