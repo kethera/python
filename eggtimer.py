@@ -51,11 +51,27 @@ def min_eight():								# One minute
 	time.sleep(60)
 	return
 
+def egg_timer():
+        print('The Alton Brown egg timer!')
+        input('Boil egg(s) in kettle. Hit enter when the kettle shuts itself off')
+
+        first_wait_period()
+        min_seven()
+        min_eight()
+
+        print('Hooray your eggs are cooked, enjoy!')
+        return
+
 #----------------
 # Main program
 #----------------
+<<<<<<< HEAD
 greet()
 first_wait_period()
 min_seven()
 min_eight()
 print('Hooray your eggs are cooked, enjoy!')
+=======
+
+egg_timer()
+>>>>>>> 3c955ddc5d5922cffa7823818441bd942cd3725c
