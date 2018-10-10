@@ -1,10 +1,32 @@
 #!/usr/bin/env python3
+# last edited oct 9 2018 by veronica
 
 import time
 #----------------
 #Function definitions
 #----------------
-
+def greet():
+egg_art = """\
+                    .-~-.
+                     .'     '.
+                    /         \
+            .-~-.  :           ;
+          .'     '.|           |
+         /         \           :
+        :           ; .-~""~-,/
+        |           /`        `'.
+        :          |             \
+         \         |             /
+          `.     .' \          .'
+     jgs    `~~~`    '-.____.-'
+                       
+"""
+	clear
+	print egg_art
+	print(The Alton Brown electric kettle egg timer')
+	input('Boil your egg(s) in the kettle. Hit enter when the kettle shuts itself off')
+	return
+	
 def first_wait_period():
 	x=6											# Alton recommends eight minutes. So we do
 												# six here + 2 1m functions later for msgs
@@ -32,11 +54,8 @@ def min_eight():								# One minute
 #----------------
 # Main program
 #----------------
-print('The Alton Brown egg timer!')
-input('Boil egg(s) in kettle. Hit enter when the kettle shuts itself off')
-
+greet()
 first_wait_period()
 min_seven()
 min_eight()
-
 print('Hooray your eggs are cooked, enjoy!')
