@@ -6,8 +6,11 @@ import time
 #Function definitions
 #----------------
 def greet():
-egg_art = """\
-                    .-~-.
+	egg_art = '''
+  
+'''
+	print (r"""
+                       .-~-.
                      .'     '.
                     /         \
             .-~-.  :           ;
@@ -19,12 +22,9 @@ egg_art = """\
          \         |             /
           `.     .' \          .'
      jgs    `~~~`    '-.____.-'
-                       
-"""
-	clear
-	print egg_art
-	print('The Alton Brown electric kettle egg timer')
-	input('Boil your egg(s) in the kettle. Hit enter when the kettle shuts itself off')
+""")
+	print('The Alton Brown electric kettle egg timer\n')
+	input('Boil your egg(s) in the kettle. Press a key when the kettle shuts itself off')
 	return
 	
 def first_wait_period():
